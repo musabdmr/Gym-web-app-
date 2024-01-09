@@ -26,13 +26,13 @@ const kayitBackground = "public/images/kayit.jpg";
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#40434E', // arkaplan
+      main: '#40434E',
     },
     secondary: {
-      main: '#702632', // appbar
+      main: '#702632',
     },
     text: {
-      primary: '#080705', // yazılar
+      primary: '#080705',
     },
   },
 });
@@ -55,7 +55,7 @@ const App = () => {
         return (
           <div style={{ position: 'relative', opacity: 1 }}>
             {selectedMenuItem === 'Üye Kayıt' ? (
-              // Kayıt sayfasına özel arkaplan filigran
+              
               <img
                 src={kayitBackground}
                 alt="Kayıt Filigran"
@@ -71,7 +71,7 @@ const App = () => {
                 }}
               />
             ) : (
-              // Ana sayfa filigranı
+              
               <img
                 src={salonBackground}
                 alt="Filigran"
@@ -87,7 +87,7 @@ const App = () => {
                 }}
               />
             )}
-            {/* Ana sayfa içeriği */}
+            {}
             <Typography variant="h3" color="#FFFFFA" gutterBottom align='center' >
             GYMNATİON İLE FORMUNU BUL, HAYATINI ŞEKİLLENDİR
 

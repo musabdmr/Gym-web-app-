@@ -63,7 +63,7 @@ const MevcutUyeler = ({ uyeler }) => {
                   <ListItem>
                     <ListItemText primary={`Yakını Telefon: ${uye.relatives[0].phoneNumber}`} />
                   </ListItem>
-                  {/* Diğer detayları da ekleyin */}
+                  {}
                 </List>
               </Collapse>
             </Paper>

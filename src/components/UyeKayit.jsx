@@ -17,7 +17,6 @@ const UyeKayit = ({ onUyeEkle }) => {
   const [mevcutUyeler, setMevcutUyeler] = useState([]);
 
   useEffect(() => {
-    // Sayfa yüklendiğinde mevcut üyeleri çek
     async function fetchMevcutUyeler() {
       try {
         const response = await axios.get('http://localhost:3001/api/uyeler');
@@ -28,10 +27,10 @@ const UyeKayit = ({ onUyeEkle }) => {
     }
 
     fetchMevcutUyeler();
-  }, []); // Boş dependency array, sadece bir kere çağrılmasını sağlar.
+  }, []); 
 
   const handleKayit = async () => {
-    // Validation kontrolleri
+  
     const errors = {};
 
     if (!uyeAdi) {
@@ -82,7 +81,7 @@ const UyeKayit = ({ onUyeEkle }) => {
       setSnackbarOpen(true);
       setValidationError({});
 
-      // Yeni üye ekledikten sonra mevcut üyeleri güncelle
+      
       fetchMevcutUyeler();
     } catch (error) {
       console.error('İstekte bir hata oluştu:', error.message);
@@ -249,7 +248,7 @@ const UyeKayit = ({ onUyeEkle }) => {
           />
         </Grid>
 
-        {/* Kaydet Butonu */}
+        {}
         <Grid item xs={12}>
           <Button
             variant="contained"
@@ -262,7 +261,7 @@ const UyeKayit = ({ onUyeEkle }) => {
         </Grid>
       </Grid>
 
-      {/* Snackbar */}
+      {}
       <Snackbar
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
         open={snackbarOpen}
