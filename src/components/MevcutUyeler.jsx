@@ -1,5 +1,3 @@
-// MevcutUyeler.jsx
-
 import React, { useState } from 'react';
 import {
   Typography,
@@ -22,7 +20,7 @@ const MevcutUyeler = ({ uyeler }) => {
 
   return (
     <div>
-      <h2>Salonunuzdaki katılı müşterilerilere, kişisel bilgilerine ve vücut ölçülerine aşağıdan ulaşabilirsiniz sağlıklı günler dileriz</h2>
+      <h2>Salonunuzdaki katılı müşterilerilere, kişisel bilgilerine ve vücut ölçülerine aşağıdan ulaşabilirsiniz sağlıklı günler dileriz.Aşağıdan ulaşabilirsiniz</h2>
       <Grid container spacing={2}>
         {uyeler.map((uye, index) => (
           <Grid item xs={12} md={6} key={index}>

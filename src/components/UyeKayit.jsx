@@ -1,5 +1,3 @@
-// UyeKayit.jsx
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Grid, TextField, Button, Snackbar, Typography } from '@mui/material';
